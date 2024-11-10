@@ -10,21 +10,26 @@ body {
   overflow-x: hidden;
   padding: 0;
 }
+
 body header .contact {
   text-decoration: none;
   color: inherit;
 }
+
 body header .whatsappLogo {
   width: 45px;
 }
+
 body header #navibar {
   background-color: #f7edd0;
+  padding: 0; /* Remover padding extra */
 }
+
 body header #menu {
   font-size: 17px;
 }
+
 body main .portada-container {
-  
   position: relative;
   display: flex;
   justify-content: center;
@@ -34,12 +39,13 @@ body main .portada-container {
   max-height: 70vh;
   overflow: hidden;
 }
+
 body main .portada-container .portada {
   min-height: 40vh;
   max-height: 70vh;
   object-fit: cover;
-  
 }
+
 body main .portada-container .portada-texto {
   position: absolute;
   color: white;
@@ -49,4 +55,15 @@ body main .portada-container .portada-texto {
   width: 100%;
 }
 
-/*# sourceMappingURL=style.css.map */
+/* Navbar fix for mobile */
+body header nav .container-fluid {
+  padding: 0; /* Remover padding extra */
+}
+
+body header nav .navbar-toggler {
+  margin-right: 0; /* Evitar espacio extra en el botón de la navbar */
+}
+
+body header nav #navbarNav {
+  padding: 0; /* Asegurarse de que no haya padding extra */
+}
