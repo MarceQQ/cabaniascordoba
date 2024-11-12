@@ -78,7 +78,9 @@ body main .portada-container .portada-texto {
 .titles {
   font-size: 18px;
 }
-
+.bi-telephone {
+  padding-right: 8px;
+}
 @media (max-width:768px) {
   #intro {
     width: 90% !important;
