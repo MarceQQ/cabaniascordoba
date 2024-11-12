@@ -75,7 +75,9 @@ body main .portada-container .portada-texto {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
-
+.titles {
+  font-size: 18px;
+}
 
 @media (max-width:768px) {
   #intro {
