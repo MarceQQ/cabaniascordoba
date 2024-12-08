@@ -52,13 +52,34 @@ body main .portada-container .portada-texto {
   width: 100%;
 }
 
-.corazon {
-  color: #8B5A2B;
-}
-#text-intro {
-  font-size: 19px;
+
+#intro .corazon {
+  color: #8B4513; /* Color distintivo */
 }
 
+#intro .fw-bold {
+  color: #333333; /* Mayor contraste para el título */
+}
+
+#intro .text-secondary {
+  color: #5a5a5a; /* Tonos más oscuros para mejorar visibilidad */
+}
+
+#intro p {
+  margin-bottom: 1.5rem; /* Más espaciado entre párrafos */
+}
+
+#intro .fs-3 {
+  font-size: 2rem; /* Título más destacado */
+}
+
+#intro .fs-4 {
+  font-size: 1.5rem; /* Subtítulos más grandes */
+}
+
+#intro .fs-5 {
+  font-size: 1.25rem; /* Texto explicativo claro */
+}
 #services {
   background-color: #f7edd0;
 }
@@ -81,6 +102,79 @@ body main .portada-container .portada-texto {
 .bi-telephone {
   padding-right: 8px;
 }
+#services {
+  background-color: #f7edd0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  
+  margin: 0 auto; 
+}
+
+.services-list {
+  text-align: center;
+  padding: 0;
+}
+
+.service-item {
+  font-size: 1.2rem;
+  color: #8B5A2B;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.service-item i {
+  font-size: 1.5rem;
+  color: #6a4a25;
+}
+#location {
+  padding: 50px 15px; /* Espaciado para airear la sección */
+}
+
+.map-container {
+  max-width: 100%; /* Adapta el iframe al contenedor */
+  overflow: hidden;
+  border-radius: 10px; /* Esquinas redondeadas */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.map-container iframe {
+  width: 100%; /* Responsividad */
+  height: 450px;
+  border: none; /* Quitar bordes */
+}
+
+@media (max-width: 768px) {
+  #location h2 {
+    font-size: 1.8rem;
+  }
+  #location p {
+    font-size: 1rem;
+  }
+  .map-container iframe {
+    height: 300px; /* Altura reducida en pantallas pequeñas */
+  }
+}
+
+
+@media (max-width:768px) {
+  #services ul {
+      padding: 0 !important;
+  }
+  .service-item {
+      font-size: 1rem;
+  }
+}
+
+@media (max-width:425px) {
+  #services ul {
+      font-size: 0.9rem;
+  }
+}
+
 @media (max-width:768px) {
   #intro {
     width: 90% !important;
